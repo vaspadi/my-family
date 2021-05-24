@@ -11,11 +11,103 @@
   background-color: #01c3c3;
   overflow: hidden;
 }
+.body__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.body__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+.body__overlay_hide {
+  display: none;
+}
 
 .container {
   max-width: 1600px;
+  height: inherit;
   padding: 0 15px;
   margin: auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 2em;
+  z-index: 20;
+  transition: 0.6s;
+}
+.card__photo {
+  align-self: center;
+  flex-shrink: 0;
+}
+.card__content {
+  padding: 1em;
+}
+.card__close {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  font-size: 1.7em;
+  line-height: 0.9;
+  font-weight: bold;
+  background: transparent;
+  padding: 0.2em;
+  border: none;
+  cursor: pointer;
+}
+.card__close:hover {
+  color: #01c3c3;
+}
+.card__title {
+  font-family: cursive;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.card__subtitle {
+  display: block;
+  font-size: 0.6em;
+}
+.card__text {
+  font-size: 1.3em;
+  line-height: 1.3;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 2em;
+}
+.card__button:first-child {
+  margin-right: 2em;
+}
+
+.card.no-active {
+  width: auto;
+  padding: 0;
+  background-color: transparent;
+}
+.card.no-active .card__photo {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card.no-active .card__photo:hover {
+  transform: scale(1.2);
+}
+.card.no-active .card__photo:hover .photo__img {
+  transform: scale(1.1);
+}
+.card.no-active .card__content {
+  display: none;
 }
 
 .photo {
@@ -25,13 +117,6 @@
   font-size: 20px;
   padding: 1em;
   border-radius: 30% 50% 40% 50%;
-  transition: 1s;
-}
-.photo:hover {
-  transform: scale(1.2);
-}
-.photo:hover .photo__img {
-  transform: scale(1.1);
 }
 .photo_small {
   max-width: 10em;
@@ -39,17 +124,25 @@
 .photo_rotate {
   transform: rotate(130deg);
 }
-.photo_rotate:hover {
-  transform: rotate(130deg) scale(1.2);
-}
-.photo_rotate:hover .photo__img {
-  transform: rotate(-130deg) scale(1.1);
-}
 .photo_rotate .photo__img {
   transform: rotate(-130deg);
 }
 .photo__img {
   width: 100%;
   border-radius: 50%;
-  transition: 1s;
+  transition: 0.3s;
+}
+
+.button {
+  font-size: 20px;
+  color: #01c3c3;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border: 0.1em solid #01c3c3;
+  cursor: pointer;
+}
+.button:hover {
+  color: #fff;
+  background-color: #01c3c3;
 }/*# sourceMappingURL=styles.css.map */
