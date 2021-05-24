@@ -11,8 +11,8 @@
 <body class="body">
   <div class="container">
     <div class="body__content">
-      <div class="card no-active pavel">
-        <div class="photo card__photo" data-person="pavel">
+      <div class="card no-active card-pavel">
+        <div class="photo card__photo photo_rotate-2" data-person="pavel">
           <img src="img/pavel.jpg" alt="Pavel" class="photo__img">
         </div>
 
@@ -26,11 +26,78 @@
 
           <!-- <p class="card__text">Я хочу стать программистом. Сейчас занимаюсь разработкой сайтов, таких как этот и сложнее. Так же занимаюсь спортом, люблю читать книги и проводить время с друзьями.</p> -->
           <p class="card__text">Es gribu būt programmētājs. Tagad es nodarbojos ar tādu vietņu izstrādi kā šī un vēl sarežģītāka. Es arī nodarbojos ar sportu, man patīk lasīt grāmatas un pavadīt laiku kopā ar draugiem.</p>
+        </div>
+      </div>
+      
+      <div class="card no-active card-elvira">
+        <div class="photo card__photo photo_small photo_rotate" data-person="elvira">
+          <img src="img/elvira.jpg" alt="Elvira" class="photo__img">
+        </div>
 
-          <div class="card__buttons">
-            <button class="button card__button">Mana vietne</button>
-            <button class="button card__button">Mana vietne</button>
-          </div>
+        <div class="card__content">
+          <button class="card__close" data-person="elvira">&#10006;</button>
+
+          <h2 class="card__title">Pāvels Vasiļjevs
+            <span class="card__subtitle">Viļānu vidusskola - 11.а</span>
+            <span class="card__subtitle">Web-izstrādātājs</span>
+          </h2>
+
+          <!-- <p class="card__text">Я хочу стать программистом. Сейчас занимаюсь разработкой сайтов, таких как этот и сложнее. Так же занимаюсь спортом, люблю читать книги и проводить время с друзьями.</p> -->
+          <p class="card__text">Es gribu būt programmētājs. Tagad es nodarbojos ar tādu vietņu izstrādi kā šī un vēl sarežģītāka. Es arī nodarbojos ar sportu, man patīk lasīt grāmatas un pavadīt laiku kopā ar draugiem.</p>
+        </div>
+      </div>
+
+      <div class="card no-active card-dima">
+        <div class="photo card__photo" data-person="dima">
+          <img src="img/dima.jpg" alt="Dima" class="photo__img">
+        </div>
+
+        <div class="card__content">
+          <button class="card__close" data-person="dima">&#10006;</button>
+
+          <h2 class="card__title">Pāvels Vasiļjevs
+            <span class="card__subtitle">Viļānu vidusskola - 11.а</span>
+            <span class="card__subtitle">Web-izstrādātājs</span>
+          </h2>
+
+          <!-- <p class="card__text">Я хочу стать программистом. Сейчас занимаюсь разработкой сайтов, таких как этот и сложнее. Так же занимаюсь спортом, люблю читать книги и проводить время с друзьями.</p> -->
+          <p class="card__text">Es gribu būt programmētājs. Tagad es nodarbojos ar tādu vietņu izstrādi kā šī un vēl sarežģītāka. Es arī nodarbojos ar sportu, man patīk lasīt grāmatas un pavadīt laiku kopā ar draugiem.</p>
+        </div>
+      </div>
+
+      <div class="card no-active card-ivita">
+        <div class="photo card__photo photo_small photo_rotate" data-person="ivita">
+          <img src="img/ivita.jpg" alt="Ivita" class="photo__img">
+        </div>
+
+        <div class="card__content">
+          <button class="card__close" data-person="ivita">&#10006;</button>
+
+          <h2 class="card__title">Pāvels Vasiļjevs
+            <span class="card__subtitle">Viļānu vidusskola - 11.а</span>
+            <span class="card__subtitle">Web-izstrādātājs</span>
+          </h2>
+
+          <!-- <p class="card__text">Я хочу стать программистом. Сейчас занимаюсь разработкой сайтов, таких как этот и сложнее. Так же занимаюсь спортом, люблю читать книги и проводить время с друзьями.</p> -->
+          <p class="card__text">Es gribu būt programmētājs. Tagad es nodarbojos ar tādu vietņu izstrādi kā šī un vēl sarežģītāka. Es arī nodarbojos ar sportu, man patīk lasīt grāmatas un pavadīt laiku kopā ar draugiem.</p>
+        </div>
+      </div>
+
+      <div class="card no-active card-gasdak">
+        <div class="photo card__photo photo_rotate-2" data-person="gasdak">
+          <img src="img/gasdak.jpg" alt="Gazdak" class="photo__img">
+        </div>
+
+        <div class="card__content">
+          <button class="card__close" data-person="gasdak">&#10006;</button>
+
+          <h2 class="card__title">Pāvels Vasiļjevs
+            <span class="card__subtitle">Viļānu vidusskola - 11.а</span>
+            <span class="card__subtitle">Web-izstrādātājs</span>
+          </h2>
+
+          <!-- <p class="card__text">Я хочу стать программистом. Сейчас занимаюсь разработкой сайтов, таких как этот и сложнее. Так же занимаюсь спортом, люблю читать книги и проводить время с друзьями.</p> -->
+          <p class="card__text">Es gribu būt programmētājs. Tagad es nodarbojos ar tādu vietņu izstrādi kā šī un vēl sarežģītāka. Es arī nodarbojos ar sportu, man patīk lasīt grāmatas un pavadīt laiku kopā ar draugiem.</p>
         </div>
       </div>
 
@@ -41,34 +108,38 @@
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       const overlay = document.querySelector('.body__overlay')
-      const photo = document.querySelector('.photo')
-      const cardClose = document.querySelector('.card__close')
+      const photos = document.querySelectorAll('.photo')
+      const cardCloseButtons = document.querySelectorAll('.card__close')
 
       overlay.addEventListener('click', function () {
         const person = this.getAttribute('data-person')
-        const card = document.querySelector('.' + person)
+        const card = document.querySelector('.card-' + person)
 
         card.classList.add('no-active')
         this.classList.add('body__overlay_hide')
       })
 
-      photo.addEventListener('click', function () {
-        const person = this.getAttribute('data-person')
-        const card = document.getElementsByClassName(person)[0]
+      for (let i = 0; i < photos.length; i++) {
+        photos[i].addEventListener('click', function () {
+          const person = this.getAttribute('data-person')
+          const card = document.querySelector('.card-' + person)
 
-        card.classList.remove('no-active')
-        overlay.setAttribute('data-person', person)
-        overlay.classList.remove('body__overlay_hide')
-      })
-      
-      cardClose.addEventListener('click', function () {
-        const person = this.getAttribute('data-person')
-        const card = document.getElementsByClassName(person)[0]
-        
-        card.classList.add('no-active')
-        overlay.removeAttribute('data-person')
-        overlay.classList.add('body__overlay_hide')
-      })
+          card.classList.remove('no-active')
+          overlay.setAttribute('data-person', person)
+          overlay.classList.remove('body__overlay_hide')
+        })
+      }
+
+      for (let i = 0; i < cardCloseButtons.length; i++) {  
+        cardCloseButtons[i].addEventListener('click', function () {
+          const person = this.getAttribute('data-person')
+          const card = document.querySelector('.card-' + person)
+          
+          card.classList.add('no-active')
+          overlay.removeAttribute('data-person')
+          overlay.classList.add('body__overlay_hide')
+        })
+      }
     })
   </script>
 </body>
