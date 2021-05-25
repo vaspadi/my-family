@@ -5,40 +5,45 @@
   font-size: 1.4vw
   padding: 1em
   border-radius: 30% 50% 40% 50%
-  transform: rotate(130deg)
 
-  &:hover
-    transform: rotate(0deg) scale(1.2)
+  @media screen and (min-width: 820px)
+    transform: rotate(130deg)
 
-    .photo__img
-      transform: rotate(0deg) scale(1.1)
+    &:hover
+      transform: rotate(0deg) scale(1.2)
 
+      .photo__img
+        transform: rotate(0deg) scale(1.1)
+
+  
   &_small
     max-width: 12em
 
   &_rotate
-    transform: rotate(190deg)
+    @media screen and (min-width: 820px)
 
-    .photo__img
-      transform: rotate(-190deg)
-
-    &:hover
-      transform: rotate(0deg) scale(1.2)
-
+      transform: rotate(190deg)
       .photo__img
-        transform: rotate(0deg) scale(1.1)
+        transform: rotate(-190deg)
+
+      &:hover
+        transform: rotate(0deg) scale(1.2)
+
+        .photo__img
+          transform: rotate(0deg) scale(1.1)
 
   &_rotate-2
-    transform: rotate(100deg)
+    @media screen and (min-width: 820px)
 
-    .photo__img
-      transform: rotate(-100deg)
-
-    &:hover
-      transform: rotate(0deg) scale(1.2)
-
+      transform: rotate(100deg)
       .photo__img
-        transform: rotate(0deg) scale(1.1)
+        transform: rotate(-100deg)
+
+      &:hover
+        transform: rotate(0deg) scale(1.2)
+
+        .photo__img
+          transform: rotate(0deg) scale(1.1)
 
   &__img
     width: 100%

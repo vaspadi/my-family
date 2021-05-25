@@ -1,16 +1,22 @@
 .body
   height: 100vh
   background-color: #01c3c3
-  // background: rgb(13,187,186);
   background: linear-gradient(0deg, rgba(13,187,186,1) 35%, rgba(116,242,206,1) 100%)
   overflow: hidden
+
+  @media screen and (max-width: 820px)
+    height: auto
+    min-height: 100vh
+    overflow: scroll
 
   &__content
     position: relative
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
-    height: 100%
+    height: inherit
+    padding-top: 150px
 
   &__overlay
     position: absolute
